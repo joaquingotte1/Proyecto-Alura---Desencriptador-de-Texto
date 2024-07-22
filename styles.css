@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Georgia', serif;
+}
+
+h1 img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 70px;
+    margin-left: -20px; 
+}
+
+input[type="text"] {
+    width: 450px;
+    padding: 15px;
+    margin: 150px auto;
+    display: block;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 180px;
+}
+
+button {
+    padding: 20px 70px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #09350b;
+}
+
+#mensaje {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    color: #999999;
+    margin: 220px ;
+}
+
+#mensaje img {
+    width: 25px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.info-section {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 150px;
+    border: 2px solid rgb(23, 95, 41);
+    border-radius: 8px;
+    width: 300px; /* Ancho fijo del contenedor */
+    height: 600px; /* Alto fijo del contenedor */
+    word-wrap: break-word; /* Rompe las palabras largas */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical cuando sea necesario */
+}
+
+
+.info-section p:first-of-type {
+    font-size: 24px;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    overflow: hidden; /* Esconde el desbordamiento del contenido */
+    text-overflow: ellipsis; /* Añade puntos suspensivos al texto desbordado */
+}
+
+.info-section p:nth-of-type(2) {
+    white-space: pre-wrap; /* Permite que el texto envuelva y preserve los saltos de línea */
+    word-wrap: break-word; /* Rompe las palabras largas */
+    overflow: hidden; /* Esconde el desbordamiento del contenido */
+    text-align: center; /* Alinea el texto a la izquierda para mejor legibilidad */
+}
+
+.info-section .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.info-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+.info-section2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 200px;
+    font-family: 'Arial', sans-serif; /* Ejemplo de tipo de fuente elegante */
+}
+
+.info-section2 ul {
+    list-style-type: none; /* Quita los puntos predeterminados de las listas */
+    padding: 0;
+}
+
+.info-section2 li {
+    margin: 80px 0; /* Agrega separación entre elementos de la lista */
+    font-size: 20px; /* Tamaño de letra */
+    font-weight: bold; /* Opcional: ajusta el peso de la fuente */
+    padding-left: 150px; /* Desplaza los elementos hacia la derecha */
+}
+
+.info-section2 li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.info-section2 li a:hover {
+    color: #f0e68c; /* Color al pasar el mouse (ejemplo: khaki) */
+}
+
+
+
+
+footer {
+    text-align: left;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/* Media Queries */
+
+/* Estilos para tabletas y dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    h2 {
+        font-size: 50px;
+        margin-left: 0; /* Alineación central */
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .buttons {
+        bottom: 100px; /* Ajuste para evitar superposición */
+    }
+
+    .info-section {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 20px;
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .info-section .image-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info-section2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .info-section2 li {
+        margin: 20px 0;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    footer {
+        position: relative;
+        bottom: auto;
+        padding-left: 20px;
+    }
+}

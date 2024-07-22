@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encriptación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Soft Inc
+        <img src="soft.png" alt="Icono">
+    </h1>
+    <h2>EncriptApp</h2>
+    <input type="text" id="texto" placeholder="Ingrese texto aquí">
+    <p id="mensaje" style="display: none; color: red;">¡Has ingresado una letra mayúscula o con tilde!</p>
+    <p id="mensaje"> <img src="atencion.jpg" alt="Icono">
+    Solo letras minusculas y sin acentos</p>
+    <div class="buttons">
+        <button type="button" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+        <button type="button" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+        <button type="button" id="btnLimpiar" onclick="limpiar()">Limpiar</button>
+
+    </div>
+    <div class="info-section">
+        <img src="imagen.jpg" alt="Imagen">
+        <p><strong>Sin mensajes</strong></p>
+        <p>Ingrese el texto que desee encriptar o desencriptar</p>
+    </div>
+    <div class="info-section2">
+        <ul>
+            <li><a href="#conocenos">Conócenos</a></li>
+            <li><a href="#contactanos">Contáctanos</a></li>
+            <li><a href="#nuestros-servicios">Nuestros servicios</a></li>
+            <li><a href="#cotizaciones">Cotizaciones</a></li>
+        </ul>
+    </div>
+    
+    
+    <footer>
+        <p>&copy; 2024 Soft Inc. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="logica.js"></script>
+</body>
+</html>
+
